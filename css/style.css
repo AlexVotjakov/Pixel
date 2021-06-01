@@ -52,7 +52,6 @@ h2, h3{
 .indent--bottom{
 	margin-bottom: 1em;
 }
-/******************************************/
 
 .topmenu{
 	height: 6.15em;
@@ -145,12 +144,6 @@ h2, h3{
 	margin: 0 -26px;
 	justify-content: center;
 }
-/*.features__items :first-child{
-	margin-left: 0;
-}
-.features__items :last-child{
-	margin-right: 0;
-}*/
 .features__item{
 	width: 25%;
 	max-width: 245px;
@@ -168,7 +161,6 @@ h2, h3{
 .features__item:hover h3{
 	color: var(--color-primary);
 }
-
 .features__icon{
 	width: 170px;
 	height: 170px;
@@ -294,17 +286,14 @@ h2, h3{
 	font-size: 1.69rem;
 	opacity: .5;
 }
-
 .contact{
 	height: 600px;
 	background: url(../img/contact/bg_contact.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	/*padding-top: 180px;*/
 	position: relative;
 }
-
 .contact__active{
 	width: 35px;
 	height: 35px;
@@ -319,9 +308,15 @@ h2, h3{
 	right: 80px;
 	cursor: pointer;
 }
+.arrow__rotate{
+	transform: rotate(180deg);
+}
 .form__active{
 	display: none;
 	padding-top:65px;
+}
+.show{
+	display: block;
 }
 .form{
 	box-sizing: border-box;
@@ -374,7 +369,6 @@ h2, h3{
 .form textarea::placeholder{
 	color: var(--color-secondary);
 }
-
 .contact__link{
 	display: flex;
 	justify-content: center;
@@ -388,7 +382,6 @@ h2, h3{
 	left: 50%;
 }
 
-
 .footer{
 	height: 100px;
 	background-color: rgba(0, 0, 0, .7);
@@ -396,6 +389,7 @@ h2, h3{
 .menu__footer{
 	display: flex;
 	justify-content: center;
+	padding: 0;
 }
 .menu__footer a{
 	font-size: 1rem;
@@ -517,8 +511,11 @@ h2, h3{
 	.contact__input input {
 		width: 184px;
   }
+  .menu__footer a{
+		padding: 0 0 0 5px;
+	}
 }
-@media(max-width: 320px){
+@media(max-width: 420px){
 	.logo img{
 		width: 230px;
 	}
@@ -529,7 +526,6 @@ h2, h3{
 	.menu__items{
 		right: 45px;
 	}
-
 	.features{
 		height: 100%;
 	}
@@ -548,16 +544,16 @@ h2, h3{
 		margin: 0;
 		/*max-width: 245px;*/
 	 }
-	  .form{
+	.form{
 		width: 250px;
 		height: 445px;
-		}
-		.form p{
-			line-height: normal;
-		}
-		.form__title{
-			font-size: 2rem;
-		}
+	}
+	.form p{
+		line-height: normal;
+	}
+	.form__title{
+		font-size: 2rem;
+	}
 	.contact__link {
    	 bottom: 7px;
      left: 41%;
